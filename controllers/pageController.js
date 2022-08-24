@@ -5,7 +5,7 @@ exports.IndexPage = async (req,res)=>{
     try {
         //res.render("index", {});
         
-        res.sendFile(__dirname+'/index.html')
+        res.sendFile('/../public/index.html')
     } catch (error) {
         console.log(error)
     }
@@ -27,7 +27,7 @@ exports.Photo = async (req,res)=>{
         console.log(__dirname)
         console.log("W_W_W_W_W_W_W_W_W_W_W_W")
         //res.sendFile('/public/photo.html', { root: '../' })
-        res.sendFile('../../public/photo.html')
+        res.sendFile('../public/photo.html')
     } catch (error) {
         console.log(error)
     }
