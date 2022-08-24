@@ -23,7 +23,10 @@ exports.Time = async (req,res)=>{
 
 exports.Photo = async (req,res)=>{
     try {      
-        res.sendFile('../'+__dirname+'/photo.html')
+        console.log("W_W_W_W_W_W_W_W_W_W_W_W")
+        console.log(__dirname)
+        console.log("W_W_W_W_W_W_W_W_W_W_W_W")
+        res.sendFile('..'+__dirname+'/photo.html')
     } catch (error) {
         console.log(error)
     }
