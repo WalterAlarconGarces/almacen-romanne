@@ -4,9 +4,8 @@ const data_base = require('../config/database'); //calls database configuration
 exports.IndexPage = async (req,res)=>{
     try {
         //res.render("index", {});
-        console.log("WWWWWWWW")
-        console.log(__dirname)
-        res.sendFile(__dirname+'../index.html')
+        
+        res.sendFile('../../index.html')
     } catch (error) {
         console.log(error)
     }
