@@ -6,7 +6,7 @@ exports.IndexPage = async (req,res)=>{
         //res.render("index", {});
         console.log("WWWWWWWW")
         console.log(__dirname)
-        res.sendFile('../index.html')
+        res.sendFile('../../index.html')
     } catch (error) {
         console.log(error)
     }
