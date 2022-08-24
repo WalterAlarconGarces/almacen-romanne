@@ -21,4 +21,5 @@ app.engine(
   })
 )
 app.use("/assets", express.static(__dirname + "/assets"));
+app.use("/public", express.static(__dirname + "/public"));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

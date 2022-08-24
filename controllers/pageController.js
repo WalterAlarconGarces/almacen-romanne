@@ -26,7 +26,7 @@ exports.Photo = async (req,res)=>{
         console.log("W_W_W_W_W_W_W_W_W_W_W_W")
         console.log(__dirname)
         console.log("W_W_W_W_W_W_W_W_W_W_W_W")
-        res.sendFile('photo.html', { root: '../' })
+        res.sendFile('/public/photo.html', { root: '../' })
     } catch (error) {
         console.log(error)
     }
