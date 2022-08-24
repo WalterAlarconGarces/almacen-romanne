@@ -1,0 +1,2 @@
+npm init -y
+npm i axios bootstrap dotenv express express-handlebars express-fileupload jquery jsonwebtoken moment nodemon pg pg-hstore sequelize uuid sequelize-auto sequelize-auto-models
