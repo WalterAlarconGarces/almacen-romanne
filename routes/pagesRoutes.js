@@ -13,5 +13,9 @@ module.exports = () =>{
     .route("/time")
     .get(pageController.Time)
 
+    router
+    .route("/photo")
+    .get(pageController.Photo)
+
     return router
 }

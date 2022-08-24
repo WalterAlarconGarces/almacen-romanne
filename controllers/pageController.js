@@ -20,3 +20,11 @@ exports.Time = async (req,res)=>{
         console.log(error)
     }
 }
+
+exports.Photo = async (req,res)=>{
+    try {      
+        res.sendFile('../'+__dirname+'/photo.html')
+    } catch (error) {
+        console.log(error)
+    }
+}
