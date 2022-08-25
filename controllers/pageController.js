@@ -23,9 +23,9 @@ exports.Time = async (req,res)=>{
 
 exports.Photo = async (req,res)=>{
     try {      
-        console.log("W_W_W_W_W_W_W_W_W_W_W_W")
+        
         console.log(__dirname)
-        console.log("W_W_W_W_W_W_W_W_W_W_W_W")
+        
         //res.sendFile('/public/photo.html', { root: '../' })
         res.sendFile('./public/photo.html')
     } catch (error) {
