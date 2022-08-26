@@ -5,7 +5,7 @@ exports.IndexPage = async (req,res)=>{
     try {
         //res.render("index", {});
         
-        res.sendFile('/../public/index.html')
+        res.sendFile('../public/index.html')
     } catch (error) {
         console.log(error)
     }
