@@ -5,7 +5,7 @@ exports.IndexPage = async (req,res)=>{
     try {
         //res.render("index", {});
         
-        res.sendFile('../public/index.html')
+        res.sendFile('https://proyecto-almacen-romanne.herokuapp.com/public/index.html')
     } catch (error) {
         console.log(error)
     }
@@ -27,7 +27,7 @@ exports.Photo = async (req,res)=>{
         console.log(__dirname)
         
         //res.sendFile('/public/photo.html', { root: '../' })
-        res.sendFile('./public/photo.html')
+        res.sendFile('https://proyecto-almacen-romanne.herokuapp.com/public/photo.html')
     } catch (error) {
         console.log(error)
     }
