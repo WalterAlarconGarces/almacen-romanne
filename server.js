@@ -11,8 +11,9 @@ const bodyParser = require("body-parser");  //allows Express to read the body an
 
 app.use(express.json());    //recognizes the incoming request object as a JSON object
 app.use(bodyParser.urlencoded({ extended: false }));  //parses the text as URL-encoded data (which is the way browsers tend to send form data from regular forms set to POST) and exposes the resulting object (containing the keys and values) in req.
-app.use("/",pagesRoutes())
-app.set("view engine", "handlebars");
+app.use("/",pagesRoutes()) //uses pagesRoutes() to manage the endpoints of the root "/"
+app.set("view engine", "handlebars"); //habdlebars system configuration
+//template engine configuration:
 app.engine(
   "handlebars",
   engine({
@@ -20,6 +21,6 @@ app.engine(
     partialsDir: __dirname + "/views/partials",
   })
 )
-app.use("/assets", express.static(__dirname + "/assets"));
-app.use("/public", express.static(__dirname + "/public"));
+app.use("/assets", express.static(__dirname + "/assets"));//To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
+app.use("/public", express.static(__dirname + "/public"));//To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

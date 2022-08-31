@@ -20,6 +20,10 @@ const Precios = database.define("precios",{
         type: Sequelize.INTEGER,
         allowNull: false,
     },
+    costo_con_porcentaje: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+    },
     porcentaje: {
         type: Sequelize.INTEGER,
         allowNull: false,
